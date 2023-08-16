@@ -1,0 +1,105 @@
+/* contact.component.css */
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px;
+    max-width: 100%;
+    background-color: #e6f7ff;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .tile {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tile-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+  /* Update WhatsApp icon color to green */
+  .fab.fa-whatsapp {
+    color: #4caf50;
+  }
+  
+  .tile p {
+    margin: 5px 0;
+  }
+  
+  .contact-form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+
+  .success-message{
+    color: green;
+    margin-top: 10px;
+  }
+
+  /* Add this CSS to position the messages and button in the same line */
+.form-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .submit-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .success-message,
+  .error-message {
+    margin-top: 0;
+    margin-left: 10px;
+  }
+  

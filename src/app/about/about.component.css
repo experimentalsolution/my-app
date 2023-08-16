@@ -1,0 +1,55 @@
+/* about.component.css */
+.about-container {
+  display: flex;
+  height: 80vh;
+}
+
+.about-details {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+.box h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.about-image {
+  flex: 1;
+  background-image: url('assets/about.png');
+  background-size: cover;
+}
+
+/* Add styles for the beautified content */
+.about-heading {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.about-description {
+  font-size: 18px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.contact-btn {
+  margin-top: 20px;
+}
+

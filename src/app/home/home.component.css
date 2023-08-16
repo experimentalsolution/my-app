@@ -1,0 +1,151 @@
+/* home.component.css */
+/* Reset margin and padding for body and HTML elements */
+
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.home-container {
+  display: flex;
+  height: 80vh;
+}
+
+.content {
+  /* ... existing styles ... */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align content vertically */
+}
+
+.content-section {
+  flex: 2;
+  background-color: #f9f9f9;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Align content to the top and bottom */
+  align-items: center;
+}
+
+.animation-text {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity .1s, transform .1s;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: auto; /* Adjust as needed */
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px; /* Add margin at the bottom of the box */
+}
+
+/* Add animation to the principles */
+.principles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.principle {
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out both; /* Add animation */
+  margin-bottom: 15px; /* Add margin between principles */
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.background-section {
+  flex: 1.5;
+  background-image: url('assets/background.jpeg'); /* Updated URL */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.explore-button {
+  display: inline-block; /* Change display to inline-block */
+  padding: 10px 20px; /* Add padding to create space around the button text */
+  background-color: #007bff; /* Set the default background color */
+  color: #fff; /* Set the text color */
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin: 0 auto; 
+}
+
+.explore-button:hover {
+  background-color: #0056b3; /* Adjust hover background color */
+  transform: scale(1.05); /* Add a slight scale effect on hover */
+}
+
+.explore-button i {
+  margin-left: 5px; /* Add some spacing between text and icon */
+}
+
+/* home.component.css */
+/* ... other styles ... */
+
+.animated-color1 {
+  animation: colorChange1 2s infinite;
+}
+
+.animated-color2 {
+  animation: colorChange2 2s infinite;
+}
+
+.animated-color3 {
+  animation: colorChange3 2s infinite;
+}
+
+@keyframes colorChange1 {
+  0%, 100% {
+    color: #007bff; /* Initial color */
+  }
+  50% {
+    color: #e74c3c; /* Color during animation */
+  }
+}
+
+@keyframes colorChange2 {
+  0%, 100% {
+    color: #007bff; /* Initial color */
+  }
+  50% {
+    color: #e67e22; /* Color during animation */
+  }
+}
+
+@keyframes colorChange3 {
+  0%, 100% {
+    color: #007bff; /* Initial color */
+  }
+  50% {
+    color: #3498db; /* Color during animation */
+  }
+}
