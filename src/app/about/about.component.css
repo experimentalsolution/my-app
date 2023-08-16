@@ -35,6 +35,7 @@
   flex: 1;
   background-image: url('assets/about.png');
   background-size: cover;
+  height: 100vh;
 }
 
 /* Add styles for the beautified content */
@@ -52,4 +53,37 @@
 .contact-btn {
   margin-top: 20px;
 }
+
+@media (max-width: 600px) {
+  .about-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .about-details {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .about-image {
+    display: none; /* Hide the about image on small screens */
+  }
+
+  .box {
+    padding: 15px;
+  }
+
+  .about-heading {
+    font-size: 24px;
+  }
+
+  .about-description {
+    font-size: 16px;
+  }
+
+  .contact-btn {
+    margin-top: 10px; /* Adjust the margin for spacing */
+  }
+}
+
 

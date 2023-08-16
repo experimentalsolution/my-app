@@ -10,3 +10,13 @@
     font-style: italic;
     font-size: 10px;
   }
+
+  @media (max-width: 600px) {
+    .footer {
+      padding: 10px 0; /* Increase the padding for better spacing on small screens */
+    }
+  
+    .footer em {
+      font-size: 8px; /* Adjust the font size for smaller screens */
+    }
+  }

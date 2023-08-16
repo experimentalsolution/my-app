@@ -1,42 +1,94 @@
+/* Apply the styles for company name */
 .company-name {
-    font-family: 'Pacifico', cursive;
-    font-size: 24px;
-    color: #007bff;
-    margin-left: 8px;
+  font-family: 'Pacifico', cursive;
+  font-size: 24px;
+  color: #007bff;
+  margin-left: 8px;
+}
+
+/* Apply the styles for company tag */
+.company-tag {
+  font-family: 'Rock Salt', cursive;
+  font-size: 24px;
+  color: #007bff;
+  margin-left: 8px;
+}
+
+/* Adjust the position and styles for collapsed menu */
+.navbar-toggler.collapsed {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  z-index: 2;
+}
+
+@media (max-width: 575px) {
+  .navbar-brand {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
+
+  .navbar-brand .company-name {
+    margin-bottom: 0.25rem;
+  }
+
   .company-tag {
-    font-family: 'Rock Salt', cursive;
-    font-size: 24px;
-    color: #007bff;
-    margin-left: 8px;
+    display: none;
   }
-  
-  .header {
-    background-color: #3498db;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+
+  .navbar-toggler.collapsed {
+    position: static;
   }
-  
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+  .navbar-collapse.show {
+    position: relative;
+    max-height: none;
+    overflow: visible;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
   }
-  
-  .logo {
-    display: flex;
-    align-items: center;
+
+  .navbar-nav .nav-item {
+    width: 100%;
+    border-bottom: 1px solid #f2f2f2;
   }
-  
-  .logo-image {
-    max-width: 80px;
-    height: auto;
-    margin-right: 10px;
+
+  .navbar-nav .nav-link {
+    padding: 10px 20px;
+    line-height: 1.5;
   }
-  
-  .logo-text {
-    font-size: 28px;
-    font-weight: bold;
+
+  .navbar-nav .nav-link:hover {
+    background-color: #007bff;
+    color: white;
   }
+}
+
+
+
+.navbar-nav .nav-link {
+  padding: 10px 20px; /* Adjust padding as needed */
+  line-height: 1.5; /* Adjust line height for better spacing */
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #007bff;
+  color: white;
+  transform: none; /* Remove the zoom effect */
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.5rem; /* Adjust padding to control button size */
+  border: none;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+.navbar-toggler:hover {
+  background-color: transparent; /* Remove the background color on hover */
+}
+
+.navbar-toggler:hover .navbar-toggler-icon {
+  background-color: rgba(0, 0, 0, 0.1); /* Change background color of the icon on hover */
+}

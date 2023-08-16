@@ -82,6 +82,7 @@ body, html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  height: 100vh;
 }
 
 .explore-button {
@@ -149,3 +150,40 @@ body, html {
     color: #3498db; /* Color during animation */
   }
 }
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .home-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .content-section {
+    flex: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .background-section {
+    display: none;
+  }
+
+  .explore-button {
+    margin-top: 20px;
+    display: block;
+  }
+
+  .animation-text {
+    opacity: 1;
+    transform: translateY(0);
+    transition: none;
+  }
+}
+
+

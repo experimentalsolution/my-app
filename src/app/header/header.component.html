@@ -1,29 +1,26 @@
-<!-- header.component.html -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">
     <img src="assets/logo.png" alt="Logo" height="40">
     <span class="company-name">Experimental Solution</span>
     <span class="company-tag">- Igniting Intelligent Systems.</span>
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" (click)="toggleMenu()" [ngClass]="{'collapsed': !isMenuOpen}" type="button"
+    data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+    aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
+  <div class="collapse navbar-collapse" [ngClass]="{'show': isMenuOpen}" id="navbarNav">
     <ul class="navbar-nav ml-auto">
-     
       <li class="nav-item">
         <a class="nav-link" routerLink="/" routerLinkActive="active">
           <i class="fas fa-home"></i> Home
         </a>
       </li>
-
       <li class="nav-item">
         <a class="nav-link" routerLink="/blog">
           <i class="fas fa-pen-nib"></i> Blog
         </a>
       </li>
-
       <li class="nav-item">
         <a class="nav-link" routerLink="/about" routerLinkActive="active">
           <i class="fas fa-info-circle"></i> About
